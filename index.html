@@ -1,3 +1,5 @@
+<!-- <iframe src="https://drive.google.com/file/d/1AZZIhTANNTrvA5s46QLGkgl78LWIZ80I/preview" width="640" height="480" allow="autoplay"></iframe>
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,40 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Slides Embed</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
+        iframe {
             width: 100%;
-            height: 100%;
-            overflow: hidden;
+            height: 100vh; /* Full viewport height */
+            border: none;  /* Remove iframe border */
         }
-        .iframe-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .iframe-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        .iframe-cover {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 30px; /* Adjust the height to cover the navigation bar */
-            background: white;
+        body {
+            margin: 0;  /* Remove default margin */
         }
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTFk0IPCy7xdJ9aeNGV_NSTNJ_ngxtCJrDohk6lX3daI03oBZSRmZr7pMBH4jY41tx-xXxsH73ZNxtc/embed?start=false&loop=false&delayms=3000" 
-                frameborder="0" 
-                allowfullscreen="true" 
-                mozallowfullscreen="true" 
-                webkitallowfullscreen="true"></iframe>
-        <div class="iframe-cover"></div>
-    </div>
+<iframe src="https://drive.google.com/file/d/1AZZIhTANNTrvA5s46QLGkgl78LWIZ80I/preview" width="640" height="480" allow="autoplay"></iframe>
+
 </body>
 </html>

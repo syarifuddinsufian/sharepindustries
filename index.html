@@ -3,116 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source Sans Pro" rel="stylesheet">
     <title>SHAREP INDUSTRIES</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        header {
-            color: #073763;
-            background-color: #f0f0f0;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            height: 10vh;
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
         }
-        .hbox1 {
-            text-align: center;
-            height: 8vh;
-            width: 25vw;
-        }
-        .hbox2 {
-            text-align: center;
-            height: 8vh;
-            width: 45vw;
-            display: flex;
+        .containerwebsite {
+            width: 100%;
+            margin: auto;
+            padding: 10px;
             align-items: center;
             justify-content: center;
         }
-        .hbox3 {
+        header {
+            background-color: #073763;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
-            height: 8vh;
-            width: 30vw;
         }
+
         .logo {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 4vh;
-            font-weight: bold;
+            max-width: 350px;
         }
-        .tagline {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 2vh;
-            font-weight: light;
+
+        h1 {
+            margin: 10px 0;
         }
-        nav ul {
+
+        .cta {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0056b3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta:hover {
+            background-color: #004494;
+        }
+
+        section {
+            padding: 10px 0;
+            background-color: #fff;
+            /* border-bottom: 1px solid #ddd; */
+        }
+
+        h2 {
+            border-bottom: 2px solid #073763;
+            padding-bottom: 10px;
+            color: #073763;
+        }
+
+        ul {
             list-style-type: none;
-            margin: 0;
             padding: 0;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
+
+        li {
+            margin: 10px 0;
         }
-        nav ul li a {
-            text-decoration: none;
-            color: #073763; /* Text color */
-            font-family: 'Source Sans Pro', sans-serif;
-            font-size: 3vh;
+
+        form {
+            margin: 20px 0;
         }
-        nav ul li a:hover {
-            color: #FFC107; /* Hover color */
-        }
-        .content {
-            padding: 1vh;
-            text-align: center;
-            background-color: #ffffff;
+
+        form label {
+            display: block;
+            margin: 5px 0;
             color: #073763;
-            flex: 1;
         }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #073763;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        address {
+            margin: 20px 0;
+        }
+
+        .social-media {
+            margin: 20px 0;
+        }
+
+        .social-link {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #073763;
+        }
+
+        .social-link:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: #073763;
-            color: #ffffff;
+            color: #fff;
             text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 10px 0;
         }
-        .container {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .screenshots {
+            background-color: #fff;
+            padding: 20px;
+            /* border-bottom: 1px solid #ddd; */
+        }
+
+        .screenshots h2 {
+            border-bottom: 2px solid #073763;
+            padding-bottom: 10px;
+            color: #073763;
+        }
+
+        .screenshots .box {
+            display: inline-block;
+            width: 29%;
+            margin: 1%;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .screenshots .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="hbox1">
-                <div class="logo">SHAREP INDUSTRIES</div>
-                <div class="tagline">DIGITALIZING THE FUTURE.</div>
-            </div>
-            <div class="hbox2">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="hbox3"></div>
-        </header>
-        <div class="content">
-            <h2>Our Website is Under Construction</h2>
-            <p>We are working hard to give you a better experience. Stay tuned!</p>
+    <header>
+        <div class="container">
+            <img src="images/company_logo.png" alt="SHAREP INDUSTRIES Logo" class="logo">
+            <h1>Transforming Vision into Reality with Cutting-Edge Web Development Solutions</h1>
+            <a href="#contact" class="cta">Contact Us for Tailored Web Solutions</a>
         </div>
-        <footer>
-            <p>&copy; 2024 SHAREP INDUSTRIES</p>
-        </footer>
-    </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Established with a mission to advance the web development landscape, SHAREP INDUSTRIES has been delivering sophisticated solutions for data management and logistics, combining technology with practicality.</p>
+            <p><strong>Vision Statement:</strong> To be at the forefront of web development, delivering transformative solutions that empower businesses through innovative technology.</p>
+            <p><strong>Mission Statement:</strong> We are committed to designing and developing high-performance web applications that address complex challenges in real-time data monitoring and logistics, ensuring our clients achieve operational excellence.</p>
+            <p><strong>Values/Core Beliefs:</strong> Our core values are innovation, reliability, and client-centricity. We strive to develop solutions that not only meet but exceed our clients' expectations.</p>
+            <p><strong>Team/Leadership:</strong> Our team of skilled professionals brings a wealth of expertise in web development, dedicated to crafting solutions that drive success and efficiency for our clients.</p>
+            <p><strong>Milestones:</strong> We take pride in our successful projects, including advanced real-time monitoring systems and seamless parcel tracking solutions, which have set benchmarks in the industry.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Services/Products</h2>
+            <ul>
+                <li><strong>Custom Web Development:</strong> Tailored web applications to meet specific business needs.</li>
+                <li><strong>Real-Time Data Monitoring Systems:</strong> Advanced solutions for live data visualization and alert management.</li>
+                <li><strong>Parcel Tracking Solutions:</strong> Efficient tracking systems designed to streamline logistics and improve delivery accuracy.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>Developed Products</h2>
+            <p>Explore our successful implementations and client success stories showcasing the impact of our solutions.</p>
+
+            <div class="containerwebsite">
+                <div class="box">
+                    <img src="images/sosmosys_page.png" alt="Screenshot 1">
+                    <p>Soil Settlement Monitoring System</p>
+                </div>
+                <div class="box">
+                    <img src="images/temphumid_page.png" alt="Screenshot 2">
+                    <p>Temperature & Humidity Monitoring System</p>
+                </div>
+                <div class="box">
+                    <img src="images/solar_page.png" alt="Screenshot 3">
+                    <p>Solar Power Generation Dashboard</p>
+                </div>
+                <div class="box">
+                    <img src="images/hvac_page.png" alt="Screenshot 3">
+                    <p>HVAC Maintenance Monitoring System</p>
+                </div>
+                <div class="box">
+                    <img src="images/fence_page.png" alt="Screenshot 3">
+                    <p>Electric Fence Monitoring System</p>
+                </div>
+                <div class="box">
+                    <img src="images/parcel_page.png" alt="Screenshot 3">
+                    <p>Parcel Tracking System</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <address>
+                <p><strong>Company Address:</strong> 4833 Taman Setia Klebang Besar, 75200 Melaka, Malaysia</p>
+                <p><strong>Phone:</strong> +60 1136181714</p>
+                <p><strong>Email:</strong> <a href="mailto:syarifuddin.sufian@sharepindustries.com">syarifuddin.sufian@sharepindustries.com</a></p>
+            </address>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/syarifuddinsufian" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SHAREP INDUSTRIES. All rights reserved.</p>
+            <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a>
+        </div>
+    </footer>
 </body>
 </html>
